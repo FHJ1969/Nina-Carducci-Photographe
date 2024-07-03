@@ -6,7 +6,7 @@ body {
 	font-family: 'Inter';
 	font-style: normal;
 }
-.top-header {
+header {
 	background-color: white;
 	position: sticky;
 	top:0;
@@ -17,35 +17,25 @@ body {
 	padding-block: 30px;
 	align-items: center;
 }
-
-.top-header .name {
+header .name {
 	font-size: 26px;
 }
-
-.nav ul {
+nav ul {
 	display: flex;
 	list-style-type: none;
 	font-size: 14px;
 	margin-bottom: 0;
 }
-
-.nav li {
+nav li {
 	padding-inline: 10px;
 }
-
-.nav a {
+nav a {
 	text-decoration: none;
 	color: #000
 }
-
-.nav a:hover {
-	color: #0d6efd;
-}
-
 .social-link img {
 	width: 20px;
 }
-
 #about {
 	display: flex;
 	background-color: #F6D2B8;
@@ -53,7 +43,6 @@ body {
 	padding-block: 100px;
 	position: relative;
 }
-
 .picture.left::before {
 	content: ' ';
 	background-color: #E5975F;
@@ -64,16 +53,13 @@ body {
 	left: 0;
 	z-index: -1;
 }
-
 .picture {
 	flex: 1;
 	margin: 0 20px;
 	z-index: 0;
 }
-
 .picture img {
 	width: 100%;
-
 }
 #about-me {
 	flex: 2
@@ -93,7 +79,6 @@ body {
 	width: 80%;
 	font-size: 14px;
 }
-
 #gallery {
 	/*	min-height: 100vh; */
 }
@@ -112,9 +97,6 @@ body {
 .nav-pills .nav-link {
 	color: #000
 }
-.active-item {
-	cursor: pointer;
-}
 .nav-item {
 	cursor: pointer;
 }
@@ -127,7 +109,6 @@ body {
 	content: "";
 	display: block;
 	padding-bottom: 100%;
-
 }
 .gallery-item {
 	position: absolute;
@@ -145,7 +126,6 @@ body {
 	display: flex;
 	font-size: 24px;
 }
-
 .quote {
 	font-family: 'Spectral';
 	font-style: italic;
@@ -164,7 +144,6 @@ body {
 	font-weight: 800;
 	font-size: 22px;
 }
-
 #services {
 	margin: auto;
 	background-color: #A8D5D8 ;
@@ -180,14 +159,12 @@ body {
 	left: 0;
 	z-index: 0;
 }
-
 #services .container {
 	justify-content: space-between;
 	display: flex;
 	padding : 2em 0;
 
 }
-
 .service {
 	background-color: white;
 	max-width: 390px;
@@ -199,16 +176,14 @@ body {
 	justify-content: space-between;
 	z-index: 1;
 }
-
-#contact {
+footer {
 	margin: auto;
 	background-color: #D8D3A8 ;
 	position: relative;
 	padding-inline: 100px;
 	padding-block: 100px;
 }
-
-#contact .container {
+footer .container {
 	display: flex;
 }
 .picture.right::before {
@@ -231,7 +206,6 @@ form {
 	width: 70%;
 	align-items: flex-start;
 }
-
 form input {
 	width: 100%;
 	background-color: transparent;
@@ -239,7 +213,6 @@ form input {
 	height: 2.5em;
 	margin-bottom: 20px;
 }
-
 form textarea {
 	width: 100%;
 	background-color: transparent;
@@ -253,12 +226,11 @@ input[type="submit"] {
 	background-color: #BEB45A;
 	padding: .5em 1em
 }
-
 @media all and (max-width: 1180px) {
 	.picture {
 		flex : 2;
 	}
-	#about, #contact .container {
+	#about, footer .container {
 		align-items: center;
 	}
 	.about-me__title {
@@ -269,7 +241,6 @@ input[type="submit"] {
 		width: 100%;
 	}
 }
-
 @media all and (max-width: 1000px) {
 	#about{
 		flex-direction: column;
@@ -303,7 +274,6 @@ input[type="submit"] {
 	.service__description{
 		margin-bottom: 1em;
 	}
-
 	#services .container::before{
 		width: 30%;
 		height: 100%;
@@ -312,11 +282,10 @@ input[type="submit"] {
 		left: auto;
 		z-index: 0;
 	}
-
-	#contact .container {
+	footer .container {
 		flex-direction: column;
 	}
-	#contact .picture.right {
+	footer .picture.right {
 		margin-top: 1em;
 	}
 	.picture.right::before {
@@ -328,17 +297,16 @@ input[type="submit"] {
 		z-index: -1;
 	}
 }
-
 @media all and (max-width: 650px) {
-	.top-header {
+	header {
 		flex-direction: column;
 		padding-inline: 0;
 	}
-	.top-header .nav, .top-header .nav ul {
+	header nav, header nav ul {
 		width: 100%;
 		padding: 0 0 0 0;
 	}
-	.top-header .nav li {
+	header nav li {
 		flex: 1;
 		padding-block: 1em;
 		text-align: center;
@@ -352,7 +320,7 @@ input[type="submit"] {
 	.service {
 		max-width: 90%;
 	}
-	#about, #contact {
+	#about, footer {
 		padding-inline: 2em;
 		padding-block: 2em;
 	}
@@ -363,4 +331,3 @@ input[type="submit"] {
 		width: 80%;
 	}
 }
-
