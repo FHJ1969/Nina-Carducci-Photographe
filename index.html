@@ -44,19 +44,7 @@
 </head>
 <body>
 <header>
-	<!-- Microformat en charge du référencement local -->
-	<div class="h-card">
-		<h1 class="p-name">Nina Carducci</h1>
-		<p class="p-street-address">68 avenue Alsace-Lorraine</p>
-		<p class="p-locality">Bordeaux</p>
-		<p class="p-country-name">France</p>
-		<p class="p-postal-code">33000</p>
-		<p class="p-tel"><a href="tel:0556677889">05 56 67 78 89</a></p>
-		<div class="h-event">
-			<p class="p-name">Heures d'ouverture</p>
-			<p>Du lundi au vendredi, de <time class="dtstart" datetime="10:00">10h00</time> à <time datetime="19:00">19h00</time></p>
-		</div>
-	</div>
+	<h1 class="p-name">Nina Carducci</h1>
 	<nav class="nav">
 		<ul>
 			<li><a href="#about">À propos</a></li>
@@ -226,6 +214,29 @@
 		</div>
 	</div>
 </footer>
+<!--Informations à destination des résultats enrichis -->
+<script type="application/ld+json">
+	{
+		"@context": "https://schema.org",
+		"@type": "LocalBusiness",
+		"name": "Nina Carducci - Photographe",
+		"image": "https://example.com/nina.webp",
+		"address": {
+			"@type": "PostalAddress",
+			"streetAddress": "68 avenue Alsace-Lorraine",
+			"addressLocality": "Bordeaux",
+			"addressCountry": "FR",
+			"postalCode": "33000"
+		},
+		"telephone": "+33 5 56 67 78 89",
+		"openingHours": "Mo-Fr 10:00-19:00",
+		"sameAs": [
+			"https://www.instagram.com/ninacarducci.photo/?hl=fr"
+		],
+		"priceRange": "€50 - €400"
+	}
+</script>
+
 
 <script src="./assets/bootstrap/bootstrap.bundle.min.js" defer></script>
 <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
