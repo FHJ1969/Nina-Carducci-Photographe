@@ -218,7 +218,7 @@ footer .container {
 	text-align: center;
 	margin: 20px 0 10px;
 }
-.tel-container h4 {
+.tel-container span {
 	font-size: 11px;
 }
 .picture.right::before {
