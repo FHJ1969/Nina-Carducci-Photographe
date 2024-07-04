@@ -20,6 +20,9 @@ header {
 header .name {
 	font-size: 26px;
 }
+.h-card h1 {
+	font-size: 26px;
+}
 .h-card p {
 	display: none;
 }
@@ -84,6 +87,7 @@ nav a {
 	font-weight: 800;
 	font-style: italic;
 	width: 60%;
+	font-size: 1rem;
 }
 #about-me p {
 	width: 80%;
@@ -95,6 +99,7 @@ nav a {
 .title{
 	text-align: center;
 	padding-block: 2em;
+	font-size: 1.75rem;
 }
 .gallery .nav {
 	justify-content: center;
@@ -109,6 +114,7 @@ nav a {
 }
 .nav-item {
 	cursor: pointer;
+	padding-inline: 10px;
 }
 .item-column {
 	position: relative;
@@ -147,7 +153,7 @@ nav a {
 	font-family: Spectral;
 	font-style: italic;
 	font-weight: 300;
-
+	font-size: 2.5rem;
 }
 .quote__author {
 	font-family: Spectral;
@@ -227,7 +233,9 @@ footer .container {
 }
 .form-container {
 	flex : 2;
-
+}
+.form-container h2 {
+	font-size: 1.75rem;
 }
 form {
 	display: flex;
