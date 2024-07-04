@@ -20,6 +20,9 @@ header {
 header .name {
 	font-size: 26px;
 }
+.h-card p {
+	display: none;
+}
 nav ul {
 	display: flex;
 	list-style-type: none;
@@ -36,6 +39,12 @@ nav a {
 .social-link img {
 	width: 20px;
 	height: 20px;
+}
+.social-link img:hover {
+	opacity: 0.7;
+}
+.tel-lien {
+	font-size: 25px;
 }
 #about {
 	display: flex;
@@ -187,6 +196,25 @@ footer {
 footer .container {
 	display: flex;
 }
+.tel-container {
+	margin: 20px 0;
+	display: none;
+	width: 100%;
+}
+.tel-container a {
+	color: black;
+	background-color: #BEB45A;
+	padding: .5em 1em;
+	border:1px solid black;
+	display: inline-block;
+	text-decoration: none;
+	width: 100%;
+	text-align: center;
+	margin: 20px 0 10px;
+}
+.tel-container h4 {
+	font-size: 11px;
+}
 .picture.right::before {
 	content: ' ';
 	background-color: #BEB45A;
@@ -302,6 +330,7 @@ input[type="submit"] {
 	header {
 		flex-direction: column;
 		padding-inline: 0;
+		flex-wrap: wrap;
 	}
 	header nav, header nav ul {
 		width: 100%;
@@ -324,6 +353,12 @@ input[type="submit"] {
 	#about, footer {
 		padding-inline: 2em;
 		padding-block: 2em;
+	}
+	.tel-container {
+		display: block;
+	}
+	.about-me__introduction {
+		width: 100%;
 	}
 	form {
 		width: 100%;
